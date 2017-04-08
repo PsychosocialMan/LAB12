@@ -1,0 +1,12 @@
+<div class='login_signup'>
+  <center>
+    
+    <%= form_for :users, url: '/users' do |f| %>
+      <div class='caption'>Регистрация</div>
+      Логин: <%= f.text_field(:login) %><br>
+      Пароль: <%= f.password_field(:password) %><br>
+      Подтверждение пароля: <%= f.password_field(:password_confirmation) %><br>
+      <%= f.submit('Готово') %> 
+    <% end %>
+  </center>
+</div>
